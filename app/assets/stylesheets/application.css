@@ -12,4 +12,16 @@
  *
  *= require_tree .
  *= require_self
+
+ *
+ *  Tell Sprockets to search in vendor/assets
+
+ *= require animate.css/animate.min
+ *= require glyphicons/glyphicons
+ *= require font-awesome/css/font-awesome
+ *= require material-design-icons/material-design-icons
+ *= require bootstrap/scss/bootstrap
+ *= require fonts/roboto/font
+ *= require flatkit/app
  */
+

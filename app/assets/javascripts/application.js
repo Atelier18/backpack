@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+//= require jquery/tether/dist/js/tether.min
+//= require jquery/bootstrap/dist/js/bootstrap
+//= require jquery/underscore/underscore-min
+//= require jquery/jQuery-Storage-API/jquery.storageapi.min
+//= require jquery/PACE/pace.min
+
+//= require flatkit/config.lazyload
+//= require flatkit/palette
+
+//= require flatkit/ui-jp
+//= require flatkit/ui-include
+//= require flatkit/ui-device
+//= require flatkit/ui-form
+//= require flatkit/ui-nav
+
+//= require flatkit/ui-scroll-to
+//= require flatkit/ui-toggle-class
+
+//= require flatkit/app

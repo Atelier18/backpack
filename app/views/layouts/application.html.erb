@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BackpackApp</title>
+    <title><%= yield(:title)%> | Backpack</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,37 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="app" id="app">
+    <!-- ############ LAYOUT START-->
+    
+    <%= render 'layouts/aside' %>
+
+    <!-- content -->
+    <div id="content" class="app-content box-shadow-z3" role="main">
+      <%= render 'layouts/app-header' %>
+
+      <%= render 'layouts/app-footer' %>
+
+      <div class="app-body" id="view">
+
+        <!-- ############ PAGE START-->
+        <div class="padding">
+          <div class="margin">
+            <h5 class="m-b-0 _300">Hi Jone, Welcome back</h5>
+            <small class="text-muted">Awesome uikit for your next Material Design project</small>
+          </div>
+
+          <div class="row">
+            <%= yield %>
+          </div>
+
+        </div>
+        <!-- ############ PAGE END-->
+      </div>
+    </div>
+    <!-- / end of content -->
+    <!-- ############ LAYOUT END-->
+  </div>
+    
   </body>
 </html>
